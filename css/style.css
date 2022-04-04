@@ -1,0 +1,203 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--Very-pale-blue);
+  max-width: 28rem;
+  border-radius: 1rem;
+  margin: auto;
+  margin-top: 20rem;
+}
+.header-image img {
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+.header-section h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 2rem 0rem 0.8rem 0rem;
+}
+.body-paragraph p {
+  text-align: center;
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+  padding: 0rem 0rem 2rem 0rem;
+}
+.annual-plan {
+  display: flex;
+  padding: 0rem 0rem 2.5rem 0rem;
+}
+.annual-plan img {
+  position: relative;
+  right: 3rem;
+  height: 3vh;
+}
+.annual-plan h2 {
+  font-size: 1rem;
+  position: relative;
+  right: 1.9rem;
+  font-weight: 900;
+}
+#year {
+  color: var(--Desaturated-blue);
+}
+.annual-plan a {
+  color: var(--Bright-blue);
+  position: relative;
+  top: 0.4rem;
+  left: 2rem;
+}
+.annual-plan a:hover {
+  color: var(--Desaturated-blue);
+}
+.button-one a {
+  font-size: 1.1rem;
+  background-color: var(--Bright-blue);
+  color: white;
+  text-decoration: none;
+  padding: 1rem 5rem 1rem 5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+}
+.button-one a:hover {
+  background-color: var(--Desaturated-blue);
+}
+.button-two {
+  padding: 2.5rem 0rem 0rem 0rem;
+}
+.button-two a {
+  color: var(--Desaturated-blue);
+  text-decoration: none;
+  font-weight: 700;
+}
+.button-two a:hover {
+  color: var(--Dark-blue);
+}
+@media only screen and (max-width: 568px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Very-pale-blue);
+    max-width: 19rem;
+    border-radius: 1rem;
+    margin: auto;
+    margin-top: 20rem;
+  }
+  .header-image img {
+    border-radius: 1rem 1rem 0rem 0rem;
+    max-width: 19rem;
+  }
+  .header-section h1 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    padding: 2rem 0rem 0.8rem 0rem;
+  }
+  .body-paragraph p {
+    text-align: center;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    padding: 0rem 0rem 2rem 0rem;
+    font-size: 0.8rem;
+  }
+  .annual-plan {
+    display: flex;
+    padding: 0rem 0rem 2.5rem 0rem;
+  }
+  .annual-plan img {
+    position: relative;
+    right: 3rem;
+    height: 5.5vh;
+  }
+  .annual-plan h2 {
+    font-size: 0.8rem;
+    position: relative;
+    right: 1.9rem;
+    font-weight: 900;
+  }
+  #year {
+    color: var(--Desaturated-blue);
+  }
+  .annual-plan a {
+    color: var(--Bright-blue);
+    position: relative;
+    top: 0.4rem;
+    left: 2rem;
+    font-size: 0.7rem;
+  }
+  .annual-plan a:hover {
+    color: var(--Desaturated-blue);
+  }
+  .button-one a {
+    font-size: 0.8rem;
+    background-color: var(--Bright-blue);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 5rem 1rem 5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+  }
+  .button-one a:hover {
+    background-color: var(--Desaturated-blue);
+  }
+  .button-two {
+    padding: 2.5rem 0rem 0rem 0rem;
+  }
+  .button-two a {
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.8rem;
+  }
+  .button-two a:hover {
+    color: var(--Dark-blue);
+  }
+  footer {
+    margin: 5rem 0rem 0rem 0rem;
+    text-align: center;
+  }
+  .attribution {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+footer {
+  margin: 5rem 0rem 0rem 0rem;
+  text-align: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
