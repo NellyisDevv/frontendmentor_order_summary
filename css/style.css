@@ -19,6 +19,17 @@ body {
   align-items: center;
   background-color: var(--Pale-blue);
 }
+/* The animation below comes from Headbwoi on github I thought it was
+a really nice animation so I applied it to this Order summary card!
+*/
+@keyframes main {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 main {
   display: flex;
   flex-direction: column;
@@ -28,6 +39,7 @@ main {
   border-radius: 1rem;
   margin: auto;
   margin-top: 20rem;
+  animation: main 1.5s ease;
 }
 .header-image img {
   border-radius: 1rem 1rem 0rem 0rem;
@@ -184,11 +196,12 @@ main {
     color: var(--Dark-blue);
   }
   footer {
-    margin: 2rem 0rem 0rem 0rem;
+    margin: 1.5rem 0rem 0rem 0rem;
     text-align: center;
+    padding: 0rem 0rem 0.5rem 0rem;
   }
-  .attribution {
-    font-size: 1rem;
+  .attribution p {
+    font-size: 0.7rem;
     text-align: center;
   }
   .attribution a {
@@ -200,7 +213,7 @@ footer {
   text-align: center;
 }
 .attribution {
-  font-size: 11px;
+  font-size: 0.9rem;
   text-align: center;
 }
 .attribution a {
